@@ -17,7 +17,7 @@ spec:
       containers:
         - name: app
           image: deiro1/app-fast-food-pedidos:latest
-          command: ["sh", "-c", "npm run generate && npm run migrate && npm run start"]
+          command: ["sh", "-c", "npm run start"]
           ports:
             - containerPort: 6004
           resources:
