@@ -51,3 +51,38 @@ spec:
                 secretKeyRef:
                   name: secret-pedidos
                   key: PRODUTO_SERVICE_URL           
+            - name: SQS_REGION
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: SQS_REGION           
+            - name: SQS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: SQS_ACCESS_KEY_ID           
+            - name: SQS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: SQS_SECRET_ACCESS_KEY           
+            - name: SQS_POLLING_WAIT_TIME
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: SQS_POLLING_WAIT_TIME           
+            - name: QUEUE_CONFIRMACAO_PAGAMENTO
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: QUEUE_CONFIRMACAO_PAGAMENTO           
+            - name: QUEUE_NOTIFICAO_CLIENTE
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: QUEUE_NOTIFICAO_CLIENTE           
+            - name: QUEUE_ANONIMIZACAO_CLIENTE
+              valueFrom:
+                secretKeyRef:
+                  name: secret-pedidos
+                  key: QUEUE_ANONIMIZACAO_CLIENTE           
